@@ -51,8 +51,8 @@ export default function App() {
   return (
     <div className="app">
       <div className="header">
-        <h1>NL2SQL</h1>
-        <p>Upload a CSV, ask questions in plain English, get SQL-backed answers.</p>
+        <h1>Talk to your CSV <span style={{ color: "#ff6b6b" }}>like it owes you answers.</span></h1>
+        <p >Upload a CSV, ask questions in plain English, get SQL-backed answers.</p>
       </div>
 
       {!session ? (
