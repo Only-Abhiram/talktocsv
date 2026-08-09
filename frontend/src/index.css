@@ -1,0 +1,172 @@
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #ffffff;
+  color: #111111;
+  font-family: "Space Grotesk", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.app {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 48px 24px 96px;
+}
+
+.header {
+  margin-bottom: 32px;
+}
+
+.header h1 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  margin: 0 0 4px;
+}
+
+.header p {
+  color: #666;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.card {
+  border: 1px solid #e4e4e4;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.dropzone {
+  border: 1.5px dashed #bbb;
+  border-radius: 10px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.15s ease;
+}
+
+.dropzone:hover, .dropzone.dragging {
+  border-color: #111;
+}
+
+.dropzone input { display: none; }
+
+.dataset-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.schema-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.schema-pill {
+  border: 1px solid #ddd;
+  border-radius: 999px;
+  padding: 3px 10px;
+  font-size: 0.75rem;
+  color: #333;
+}
+
+.query-form {
+  display: flex;
+  gap: 8px;
+}
+
+.query-form input {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px 14px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+
+.query-form input:focus {
+  outline: none;
+  border-color: #111;
+}
+
+button {
+  background: #111;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 18px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+.result-entry {
+  border-top: 1px solid #eee;
+  padding-top: 16px;
+  margin-top: 16px;
+}
+
+.result-entry .question {
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.result-entry .explanation {
+  color: #333;
+  margin: 8px 0;
+  line-height: 1.5;
+}
+
+.sql-block {
+  background: #f7f7f7;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.78rem;
+  color: #333;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 10px;
+  font-size: 0.82rem;
+}
+
+th, td {
+  border: 1px solid #eee;
+  padding: 6px 10px;
+  text-align: left;
+}
+
+th {
+  background: #fafafa;
+  font-weight: 600;
+}
+
+.error-box {
+  border: 1px solid #e5b1b1;
+  background: #fff5f5;
+  color: #a33;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 0.85rem;
+}
+
+.muted { color: #888; font-size: 0.8rem; }
