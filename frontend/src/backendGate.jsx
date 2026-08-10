@@ -39,7 +39,7 @@ export default function BackendGate() {
         {attempt === 0 ? "Waking up the server" : "Still warming up"}
       </h2>
       <p className="gate-subtext muted">
-      Waking the server… please hold 🫡
+      Please hold... 🫡
       </p>
     </div>
   );
