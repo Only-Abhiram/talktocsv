@@ -39,7 +39,7 @@ export default function BackendGate() {
         {attempt === 0 ? "Waking up the server" : "Still warming up"}
       </h2>
       <p className="gate-subtext muted">
-        Render's free tier spins down when idle — this can take up to a minute on first load.
+      Waking the server… please hold 🫡
       </p>
     </div>
   );
